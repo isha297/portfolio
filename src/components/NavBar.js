@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import navIcon1 from '../assets/img/color-sharp.png';
+import Logo from "../assets/img/react-js-icon.svg";
+import LinkedIn from "../assets/img/linkedin.png";
+import gfg from "../assets/img/gfg.png";
+import leetcode from "../assets/img/leetcode.png";
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -33,8 +36,8 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            <img src={navIcon1} alt="Logo" />
+          <Navbar.Brand href="#home">
+            <img src={Logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -47,9 +50,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.linkedin.com/in/isha-singh-9516ba242/"><img src={LinkedIn} alt="linkedIn"/></a>
+                <a href="https://auth.geeksforgeeks.org/user/isha123297"><img src={gfg} alt="GFG"/></a>
+                <a href="https://leetcode.com/isha297/"><img src={leetcode} alt="Leetcode"/></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
