@@ -4,40 +4,23 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ocutype from "../assets/img/ocutype.jpg";
+import pawdopt from "../assets/img/pawdopt.png";
 
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-     
+      title: "Ocutype",
+      description: "Communication device for Locked-in Syndrome",
+      imgUrl: ocutype,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      
+      title: "Pawdopt",
+      description: "Platform for listing shelter animals and facilitating their adoption",
+      imgUrl: pawdopt,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
     
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-     
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-   
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-
-    },
   ];
 
   return (
@@ -49,7 +32,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Still Working on this part</p>
+                <p>Details and links to projects I've worked on</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -79,7 +62,7 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
+                    <Tab.Pane eventKey="second">
                       <p></p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
